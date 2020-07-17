@@ -1,26 +1,32 @@
 @font-face{ font-family: "Nulshock Bold"; src: url("font/nulshock\ bd.ttf");}
 
 html{
+	height: 100%;
 	width: 100%;
 	background: linear-gradient(30deg, rgb(29, 29, 29) 50%, rgb(49, 73, 126) 180%);
-
-background-attachment: fixed;
+	background-attachment: fixed;
 	overflow: visible;
 }
 
 body {
-
-
-
+	height: 100%;
 	display: flex;
 	flex-direction: column;
-	font-family: nul;
-
 	min-width: 500px;
 	max-width: 60%;
 	
 	margin-left: auto;
 	margin-right: auto;
+}
+@media only screen and (max-width: 499px){
+
+	body{
+		max-width: 499px;
+		min-width: 200px;
+	}
+	.linkImg{
+		width: 30px;
+	}
 }
 
 header{
